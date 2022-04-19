@@ -1,3 +1,7 @@
+document.addEventListener('load',setup)
+
+function setup(){
+
 const url = window.location
 
 if(url == 'https://www.tvpassport.com/tv-listings'){
@@ -8,4 +12,5 @@ document.querySelectorAll(".channel_col").forEach(e => {
   if (channelNums.includes(Number(arr[arr.length-1]))) {e.children[0].style.backgroundColor = "palegreen"
 }
 })
+}
 }
