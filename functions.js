@@ -2,7 +2,9 @@ console.log('func started')
 try{
 console.log(window.location.href,window.location.href=='https://www.tvpassport.com/tv-listings')
 } catch(e){console.log(e)}
-document.onload = function(){setup()}
+try{
+document.onload = function(){setup();console.log("Content Loaded")}
+} catch(e){console.log(e)}
 
 function setup(){
 console.log("setup started")
