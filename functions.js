@@ -1,9 +1,11 @@
 console.log('func started')
+try{
 console.log(window.location,window.location=='https://www.tvpassport.com/tv-listings')
+} catch(e){console.log(e)}
 document.onload = function(){setup()}
 
 function setup(){
-
+try {
 const url = window.location
 console.log(url)
 if(url == 'https://www.tvpassport.com/tv-listings'){
@@ -15,4 +17,5 @@ document.querySelectorAll(".channel_col").forEach(e => {
 }
 })
 }
+}catch(f){console.log(f)}
 }
