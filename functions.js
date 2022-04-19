@@ -1,5 +1,6 @@
 console.log('func started')
-document.addEventListener('load',setup)
+console.log(window.location,window.location=='https://www.tvpassport.com/tv-listings')
+document.onload = function(){setup()}
 
 function setup(){
 
