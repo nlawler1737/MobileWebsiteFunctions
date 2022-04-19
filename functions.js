@@ -1,6 +1,6 @@
 console.log('func started')
 try{
-console.log(window.location.heed,window.location.href=='https://www.tvpassport.com/tv-listings')
+console.log(window.location.href,window.location.href=='https://www.tvpassport.com/tv-listings')
 } catch(e){console.log(e)}
 document.onload = function(){setup()}
 
