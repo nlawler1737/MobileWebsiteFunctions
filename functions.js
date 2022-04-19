@@ -1,3 +1,4 @@
+console.log('func started')
 document.addEventListener('load',setup)
 
 function setup(){
