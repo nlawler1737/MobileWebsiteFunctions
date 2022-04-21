@@ -3,6 +3,7 @@ try{
 console.log(window.location.href,window.location.href=='https://www.tvpassport.com/tv-listings')
 } catch(e){console.log(e)}
 try{
+document.body.addEventListener("DOMSubtreeModified",function(){setup()})
 document.onload = function(){setup();console.log("Content Loaded")}
 window.onload = function(){setup();console.log("Window Loaded")}
 document.onreadystatechange = function () {
