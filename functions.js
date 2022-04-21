@@ -4,6 +4,7 @@ console.log(window.location.href,window.location.href=='https://www.tvpassport.c
 } catch(e){console.log(e)}
 try{
 document.onload = function(){setup();console.log("Content Loaded")}
+window.onload = function(){setup();console.log("Window Loaded")}
 } catch(e){console.log(e)}
 
 function setup(){
