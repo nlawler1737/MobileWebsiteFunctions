@@ -5,6 +5,11 @@ console.log(window.location.href,window.location.href=='https://www.tvpassport.c
 try{
 document.onload = function(){setup();console.log("Content Loaded")}
 window.onload = function(){setup();console.log("Window Loaded")}
+document.onreadystatechange = function () {
+  if (document.readyState === 'complete') {
+    console.log("readystate");
+  }
+}
 } catch(e){console.log(e)}
 
 function setup(){
