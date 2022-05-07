@@ -1,5 +1,5 @@
 console.log('func started')
-
+document.addEventListener("load",setup)
 function setup(){
 console.log("setup started")
   const urlHref = window.location.href
@@ -22,7 +22,7 @@ console.log("setup started")
     button.id = "pip-button"
     button.innerText = "P i P"
     button.style = "color:white; background:#404040; height:10vw;width:10vw;border-radius:5vw;position:fixed;right:0;bottom:0;"
-    button.onclick = "function(){console.log('test')}"
+    button.onclick = "function(){document.querySelector('video').webkitSetPresentationMode('picture-in-picture')}"
     controls.insertAdjacentElement("beforeend",button)
   }
 }
