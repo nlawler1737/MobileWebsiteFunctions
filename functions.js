@@ -15,6 +15,7 @@ console.log("setup started")
     })
   }
   if (urlHost == "m.youtube.com") {
+    console.log("YouTube")
     if (document.querySelector("#pip-button")) document.querySelector("#pip-button").remove()
     let controls = document.body
     let button = document.createElement("button")
