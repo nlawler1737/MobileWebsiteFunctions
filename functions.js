@@ -1,5 +1,5 @@
 console.log('func started')
-window.addEventListener("load",function(){console.log("STARTED?");setup())
+window.addEventListener("load",function(){console.log("STARTED?");setup()})
 function setup(){
 console.log("setup started")
   const urlHref = window.location.href
