@@ -1,3 +1,8 @@
+let antiZoom = document.createElement('meta')
+antiZoom.name = 'viewport'
+antiZoom.content = 'width=device-width, initial-scale=1, maximum-scale=1'
+document.head.appendChild(antiZoom)
+
 console.log('func started')
 window.addEventListener("load",function(){console.log("STARTED?");setup()})
 function setup(){
